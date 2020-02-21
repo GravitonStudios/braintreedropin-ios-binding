@@ -24,6 +24,8 @@ namespace BraintreeUIKit
 		Laser,
 		Maestro,
 		UnionPay,
+		Hiper,
+		Hipercard,
 		Solo,
 		Switch,
 		UKMaestro,
@@ -46,5 +48,13 @@ namespace BraintreeUIKit
 	{
 		Regular,
 		Large
+	}
+
+	[Native]
+	public enum BTUIKColorScheme : long
+	{
+		Light,
+		Dark,
+		Dynamic
 	}
 }

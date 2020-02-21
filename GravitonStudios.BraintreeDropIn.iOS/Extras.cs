@@ -39,7 +39,9 @@ namespace BraintreeDropIn
             BraintreeCard.BraintreeCardLinker.Init();
             BraintreeUnionPay.BraintreeUnionPayLinker.Init();
 
-            new BraintreePaymentFlow.BTIdealResult();
+            new BraintreePaymentFlow.BTPaymentFlowResult();
+            new BraintreePaymentFlow.BTLocalPaymentResult();
+            //new BraintreePaymentFlow.BTThreeDSecureResult();
             new BraintreeCard.BTCard();
         }
     }

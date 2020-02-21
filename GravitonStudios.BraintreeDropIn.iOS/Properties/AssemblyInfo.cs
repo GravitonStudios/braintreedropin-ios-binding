@@ -12,20 +12,20 @@ using Foundation;
 // Information about this assembly is defined by the following attributes. 
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle("Naxam.BraintreeUIKit.iOS")]
-[assembly: AssemblyDescription("Xamarin.iOS binding Library - Braintree iOS SDK - UIKit")]
+[assembly: AssemblyTitle("GravitonStudios.BraintreeDropIn.iOS")]
+[assembly: AssemblyDescription("Xamarin.iOS binding Library - Braintree iOS SDK - DropIn")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("NAXAM COMPANY LIMITED")]
+[assembly: AssemblyCompany("GRAVITON STUDIOS LLC")]
 [assembly: AssemblyProduct("X Bindings")]
-[assembly: AssemblyCopyright("Copyright (c) 2018 NAXAM")]
-[assembly: AssemblyTrademark("NAXAM")]
+[assembly: AssemblyCopyright("Copyright © 2020 GRAVITON STUDIOS LLC")]
+[assembly: AssemblyTrademark("GRAVITON STUDIOS LLC")]
 [assembly: AssemblyCulture("")]
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
 // and "{Major}.{Minor}.{Build}.*" will update just the revision.
 
-[assembly: AssemblyVersion("6.1.0")]
+[assembly: AssemblyVersion("8.0.0.1")]
 
 // The following attributes are used to specify the signing key for the assembly, 
 // if desired. See the Mono documentation for more information about signing.

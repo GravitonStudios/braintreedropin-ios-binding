@@ -82,35 +82,35 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="Naxam.BrainTreeCore.iOS">
-      <HintPath>..\..\packages\Naxam.BrainTreeCore.iOS.4.11.0\lib\Xamarin.iOS10\Naxam.BrainTreeCore.iOS.dll</HintPath>
+    <Reference Include="GravitonStudios.PayPalUtils.iOS">
+      <HintPath>..\..\..\braintree-ios-binding\GravitonStudios.PayPalUtils.iOS\bin\Release\GravitonStudios.PayPalUtils.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.BraintreeApplePay.iOS">
-      <HintPath>..\..\packages\Naxam.BraintreeApplePay.iOS.4.11.0\lib\Xamarin.iOS10\Naxam.BraintreeApplePay.iOS.dll</HintPath>
+    <Reference Include="GravitonStudios.PayPalOneTouch.iOS">
+      <HintPath>..\..\..\braintree-ios-binding\GravitonStudios.PayPalOneTouch.iOS\bin\Release\GravitonStudios.PayPalOneTouch.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.BraintreeCard.iOS">
-      <HintPath>..\..\packages\Naxam.BraintreeCard.iOS.4.11.0\lib\Xamarin.iOS10\Naxam.BraintreeCard.iOS.dll</HintPath>
+    <Reference Include="GravitonStudios.PayPalDataCollector.iOS">
+      <HintPath>..\..\..\braintree-ios-binding\GravitonStudios.PayPalDataCollector.iOS\bin\Release\GravitonStudios.PayPalDataCollector.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.BraintreeUnionPay.iOS">
-      <HintPath>..\..\packages\Naxam.BraintreeUnionPay.iOS.4.11.0\lib\Xamarin.iOS10\Naxam.BraintreeUnionPay.iOS.dll</HintPath>
+    <Reference Include="GravitonStudios.CardinalMobile.iOS">
+      <HintPath>..\..\..\braintree-ios-binding\GravitonStudios.CardinalMobile.iOS\bin\Release\GravitonStudios.CardinalMobile.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.PayPal.Risk.iOS">
-      <HintPath>..\..\packages\Naxam.PayPal.Risk.iOS.4.11.0\lib\Xamarin.iOS10\Naxam.PayPal.Risk.iOS.dll</HintPath>
+    <Reference Include="GravitonStudios.BraintreeUnionPay.iOS">
+      <HintPath>..\..\..\braintree-ios-binding\GravitonStudios.BraintreeUnionPay.iOS\bin\Release\GravitonStudios.BraintreeUnionPay.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.PayPalUtils.iOS">
-      <HintPath>..\..\packages\Naxam.PayPalUtils.iOS.4.11.0\lib\Xamarin.iOS10\Naxam.PayPalUtils.iOS.dll</HintPath>
+    <Reference Include="GravitonStudios.BraintreePayPal.iOS">
+      <HintPath>..\..\..\braintree-ios-binding\GravitonStudios.BraintreePayPal.iOS\bin\Release\GravitonStudios.BraintreePayPal.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.PayPalDataCollector.iOS">
-      <HintPath>..\..\packages\Naxam.PayPalDataCollector.iOS.4.11.0\lib\Xamarin.iOS10\Naxam.PayPalDataCollector.iOS.dll</HintPath>
+    <Reference Include="GravitonStudios.BraintreePaymentFlow.iOS">
+      <HintPath>..\..\..\braintree-ios-binding\GravitonStudios.BraintreePaymentFlow.iOS\bin\Release\GravitonStudios.BraintreePaymentFlow.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.PayPalOneTouch.iOS">
-      <HintPath>..\..\packages\Naxam.PayPalOneTouch.iOS.4.11.0\lib\Xamarin.iOS10\Naxam.PayPalOneTouch.iOS.dll</HintPath>
+    <Reference Include="GravitonStudios.BraintreeCore.iOS">
+      <HintPath>..\..\..\braintree-ios-binding\GravitonStudios.BraintreeCore.iOS\bin\Release\GravitonStudios.BraintreeCore.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.BraintreePayPal.iOS">
-      <HintPath>..\..\packages\Naxam.BraintreePayPal.iOS.4.11.0\lib\Xamarin.iOS10\Naxam.BraintreePayPal.iOS.dll</HintPath>
+    <Reference Include="GravitonStudios.BraintreeCard.iOS">
+      <HintPath>..\..\..\braintree-ios-binding\GravitonStudios.BraintreeCard.iOS\bin\Release\GravitonStudios.BraintreeCard.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.BraintreePaymentFlow.iOS">
-      <HintPath>..\..\packages\Naxam.BraintreePaymentFlow.iOS.4.11.0\lib\Xamarin.iOS10\Naxam.BraintreePaymentFlow.iOS.dll</HintPath>
+    <Reference Include="GravitonStudios.BraintreeApplePay.iOS">
+      <HintPath>..\..\..\braintree-ios-binding\GravitonStudios.BraintreeApplePay.iOS\bin\Release\GravitonStudios.BraintreeApplePay.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -149,7 +149,6 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -167,13 +166,13 @@
     <BundleResource Include="Resources\naxam_copyright%403x.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Naxam.BraintreeDropIn.iOS\Naxam.BraintreeDropIn.iOS.csproj">
+    <ProjectReference Include="..\..\GravitonStudios.BraintreeDropIn.iOS\GravitonStudios.BraintreeDropIn.iOS.csproj">
       <Project>{2962DF37-E86D-4F41-AD9D-4D40B4F92A74}</Project>
-      <Name>Naxam.BraintreeDropIn.iOS</Name>
+      <Name>GravitonStudios.BraintreeDropIn.iOS</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Naxam.BraintreeUIKit.iOS\Naxam.BraintreeUIKit.iOS.csproj">
+    <ProjectReference Include="..\..\GravitonStudios.BraintreeUIKit.iOS\GravitonStudios.BraintreeUIKit.iOS.csproj">
       <Project>{41DE3530-D243-4AA3-BCD1-17084DEA840D}</Project>
-      <Name>Naxam.BraintreeUIKit.iOS</Name>
+      <Name>GravitonStudios.BraintreeUIKit.iOS</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

@@ -1,10 +1,9 @@
-using System;
 using ObjCRuntime;
 
 namespace BraintreeUIKit
 {
 	[Native]
-	public enum BTUIKCardNumberFormFieldState : nint
+	public enum BTUIKCardNumberFormFieldState : long
 	{
 		Default = 0,
 		Validate,
@@ -12,7 +11,7 @@ namespace BraintreeUIKit
 	}
 
 	[Native]
-	public enum BTUIKPaymentOptionType : nint
+	public enum BTUIKPaymentOptionType : long
 	{
 		Unknown = 0,
 		Amex,
@@ -24,6 +23,8 @@ namespace BraintreeUIKit
 		Laser,
 		Maestro,
 		UnionPay,
+		Hiper,
+		Hipercard,
 		Solo,
 		Switch,
 		UKMaestro,
@@ -34,7 +35,7 @@ namespace BraintreeUIKit
 	}
 
 	[Native]
-	public enum BTUIKVisualAssetType : nint
+	public enum BTUIKVisualAssetType : long
 	{
 		Unknown = 0,
 		CVVBack,
@@ -42,9 +43,17 @@ namespace BraintreeUIKit
 	}
 
 	[Native]
-	public enum BTUIKVectorArtSize : nint
+	public enum BTUIKVectorArtSize : long
 	{
 		Regular,
 		Large
+	}
+
+	[Native]
+	public enum BTUIKColorScheme : long
+	{
+		Light,
+		Dark,
+		Dynamic
 	}
 }

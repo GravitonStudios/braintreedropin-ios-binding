@@ -45,7 +45,7 @@ namespace DropinQs
         {
             var request = new BTDropInRequest
             {
-                Amount = "10.0",
+                //Amount = "10.0",
                 ThreeDSecureVerification = true
             };
             var dropIn = new BTDropInController(clientTokenOrTokenizationKey, request, HandleBTDropInControllerHandler);

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+        <!-- Required elements-->
+        <id>GravitonStudios.BraintreeDropIn.iOS</id>
+        <version>8.0.0.1</version>
+        <authors>GRAVITON STUDIOS LLC</authors>
+        <owners>GRAVITON STUDIOS LLC</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>Graviton Studios - Braintree DropIn for iOS</title>
+        <summary>Xamarin iOS Binding Library - Braintree DropIn</summary>
+        <description>Xamarin iOS Binding Library - Braintree DropIn</description>
+        <releaseNotes></releaseNotes>
+        <icon>images/icon.png</icon>
+        <license type="file">LICENSE.txt</license>
+        <projectUrl>https://github.com/GravitonStudios/braintreedropin-ios-binding/tree/master/GravitonStudios.BraintreeDropIn.iOS</projectUrl>
+        <copyright>Copyright © 2020 GRAVITON STUDIOS LLC</copyright>
+        <tags>Xamarin.iOS, braintree, braintree-dropin</tags>
+        <dependencies>
+            <dependency id="GravitonStudios.BraintreePaymentFlow.iOS" version="4.32.0" />
+            <dependency id="GravitonStudios.BraintreePayPal.iOS" version="4.32.0" />
+            <dependency id="GravitonStudios.BraintreeApplePay.iOS" version="4.32.0" />
+            <dependency id="GravitonStudios.BraintreeUnionPay.iOS" version="4.32.0" />
+            <dependency id="GravitonStudios.BraintreeUIKit.iOS" version="8.0.0.1" />
+        </dependencies>
+    </metadata>
+  <!-- Optional 'files' node -->
+    <files>
+        <file src="../GravitonStudios.BraintreeDropIn.iOS/bin/Release/GravitonStudios.BraintreeDropIn.iOS.dll" target="lib/Xamarin.iOS10/GravitonStudios.BraintreeDropIn.iOS.dll" />
+        <file src="../LICENSE.txt" target="" />
+        <file src="../icon.png" target="images/" />
+    </files>
+</package>

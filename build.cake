@@ -1,7 +1,7 @@
 #tool nuget:?package=NUnit.ConsoleRunner&version=3.4.0
 
 // Cake Addins
-#addin nuget:?package=Cake.FileHelpers&version=2.0.0
+#addin nuget:?package=Cake.FileHelpers&version=3.2.1
 #addin "Cake.XCode"
 
 //////////////////////////////////////////////////////////////////////
@@ -12,27 +12,26 @@ var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
 var NATIVE_SRC_DIR="./native-src";
-var VERSION = "6.1.0";
+var VERSION = "8.0.0.1";
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
 //////////////////////////////////////////////////////////////////////
 
 var solutionPath = "./braintree-ios-dropin.sln";
-var nativeSrcUrl = $"https://codeload.github.com/braintree/braintree-ios-drop-in/legacy.zip/{VERSION}";
-
+//var nativeSrcUrl = $"https://codeload.github.com/braintree/braintree-ios-drop-in/legacy.zip/{VERSION}";
 var artifacts = new [] {
     new Artifact {
-        AssemblyInfoPath = "./Naxam.BraintreeDropIn.iOS/Properties/AssemblyInfo.cs",
-        NuspecPath = "./braintree-dropin.nuspec",
+        AssemblyInfoPath = "./GravitonStudios.BraintreeDropIn.iOS/Properties/AssemblyInfo.cs",
+        NuspecPath = "./nuspec/GravitonStudios.BraintreeDropIn.iOS.nuspec",
         Dependencies = new [] { 
-            "Naxam.BraintreeUIKit.iOS"
+            "GravitonStudios.BraintreeUIKit.iOS"
         },
         Name = "DropIn"
     },
     new Artifact {
         AssemblyInfoPath = "./Naxam.BraintreeUIKit.iOS/Properties/AssemblyInfo.cs",
-        NuspecPath = "./braintree-uikit.nuspec",
+        NuspecPath = "./nuspec/GravitonStudios.BraintreeUIKit.iOS.nuspec",
         Dependencies = new string [] { 
         },
         Name = "UIKit"
@@ -42,14 +41,14 @@ var artifacts = new [] {
 //////////////////////////////////////////////////////////////////////
 // TASKS
 //////////////////////////////////////////////////////////////////////
-Task("Downloads")
-    .Does(() =>
-{
-    // CleanDirectory(NATIVE_SRC_DIR);
-
-    var zipPath = File(NATIVE_SRC_DIR + "./src.zip");
-    DownloadFile(nativeSrcUrl, zipPath);    
-});
+//Task("Downloads")
+//    .Does(() =>
+//{
+//    // CleanDirectory(NATIVE_SRC_DIR);
+//
+//    var zipPath = File(NATIVE_SRC_DIR + "./src.zip");
+//    DownloadFile(nativeSrcUrl, zipPath);    
+//});
 
 Task("Clean")
     .Does(() =>
